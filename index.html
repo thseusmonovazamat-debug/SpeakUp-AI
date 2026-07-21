@@ -288,23 +288,215 @@
 
       <!--Pricing section-->
       <section class="pricing" id="pricing">
-        <!--Free and premium subscription plans-->
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">Tariflar</span>
+            <h2>O'zingizga mos rejani tanlang</h2>
+            <p class="section-description">
+              SpeakUp AI sizning o'rganish maqsadlaringiz va byudjetingizga
+              moslashtirilgan turli rejalarga ega.
+            </p>
+          </div>
+          <div class="pricing-list">
+            <article class="pricing-card">
+              <h3>Bepul</h3>
+              <p class="plan-description">
+                SpeakUp AI'ning asosiy imkoniyatlarini sinab ko'ring
+              </p>
+              <p class="plan-price">
+                <strong>0 so'm</strong>
+                <span>/ oy</span>
+              </p>
+              <ul class="plan-features">
+                <li>Kuniga 10 daqiqa AI bilan suhbat</li>
+                <li>Asosiy speaking mashqlari</li>
+                <li>Haftalik progress hisoboti</li>
+              </ul>
+              <a class="btn btn-outline" href="#registration">
+                Bepul boshlash
+              </a>
+            </article>
+            <article class="pricing-card featured-plan">
+              <span class="plan-badge">Eng mashhur</span>
+              <h3>Premium</h3>
+              <p class="plan-description">
+                Ko'proq imkoniyatlardan foydalaning
+              </p>
+              <p class="plan-price">
+                <strong>79 000 so'm</strong>
+                <span>/ oy</span>
+              </p>
+              <ul class="plan-features">
+                <li>Cheksiz AI bilan suhbat</li>
+                <li>Xatolarni eslab qolish va tahlil qilish</li>
+                <li>O'qituvchi bilan progress kuzatuvi</li>
+                <li>Shaxsiy o'quv rejasi</li>
+                <li>To'liq progress hisoboti</li>
+              </ul>
+
+              <a class="btn btn-primary" href="#registration">
+                Premiumni boshlash
+              </a>
+            </article>
+          </div>
+        </div>
       </section>
 
       <!--Testimonials section-->
       <section class="testimonials" id="testimonials">
-        <!--Student and teacher testimonials-->
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"
+              >O'rganuvchilarimiz qanday natijalarga erishmoqda?</span
+            >
+            <h2>SpeakUp AI haqida foydalanuvchilar fikri</h2>
+            <p class="section-description">
+              SpeakUp AI foydalanuvchilari o'z tajribalari va natijalari bilan
+              bo'lishadi.
+            </p>
+          </div>
+          <div class="testimonial-list">
+            <figure class="testimonial-card">
+              <blockquote>
+                <p>
+                  SpeakUp AI bilan gapirishni mashq qilish orqali ingliz tilida
+                  ishonch bilan gapira boshladim. Xatolarimni eslab qolish va
+                  shaxsiy mashqlar menga juda yordam berdi.
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Ali</strong>,
+                <span>Ingliz tili o'quvchisi</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>
+                <p>
+                  O'qituvchi sifatida SpeakUp AI menga o'quvchilarimning
+                  natijalarini kuzatishga yordam beradi. Ularning zaif
+                  tomonlarini aniqlash va shaxsiy tavsiyalar berish imkoniyati
+                  juda foydali.
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Farangiz</strong>,
+                <span>Ingliz tili o'qituvchisi</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>
+                <p>
+                  SpeakUp AI xatolarimni tahlil qilib, ularni tushunishga va
+                  qayta takrorlamasligimga yordam berdi.
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Vali</strong>
+                <span>Ingliz tili o'quvchisi</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
 
       <!--Registration section-->
       <section class="registration" id="registration">
-        <!--User registration form-->
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">Bepul boshlang</span>
+            <h2>SpeakUp AI bilan ingliz tilini o'rganishni boshlang</h2>
+            <p class="section-description">
+              Ro'yxatdan o'ting va shaxsiy AI ingliz tili murabbiyingiz bilan
+              suhbatlashishni boshlang.
+            </p>
+          </div>
+          <form class="registration-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="full-name">Ismingiz</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full_name"
+                placeholder="Ismingizni kiriting"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email manzilingizni kiriting"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="english-level">Ingliz tili darajangiz</label>
+              <select id="english-level" name="english_level" required>
+                <option value="">Darajangizni tanlang</option>
+                <option value="beginner">Beginner</option>
+                <option value="elementary">Elementary</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">
+                Men <a href="#">foydalanish shartlarini</a> o'qib chiqdim va
+                qabul qildim
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Bepul akkaunt yaratish
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
     <!--Site Footer-->
     <footer class="site-footer">
-      <!--Logo, contact details, and social media and legal links-->
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo"
+              >SpeakUp AI</a>
+              <p>
+                O'zbek tilida tushuntiradigan shaxsiy AI ingliz tili murabbiyi.
+              </p>
+          </div>
+          <nav class="footer-navigation" aria-label="Footer navigatsiyasi">
+            <h2 class="footer-title">Platforma</h2>
+            <ul class="footer-links">
+              <li><a href="#features">Imkoniyatlar</a></li>
+              <li><a href="#how-it-works">Qanday ishlaydi</a></li>
+              <li><a href="#pricing">Tariflar</a></li>
+              <li><a href="#testimonials">Fikrlar</a></li>
+            </ul>
+          </nav>
+          <div class="footer-contact">
+            <h2 class="footer-title">Biz bilan bog'laning</h2>
+            <p>
+              Email: <a href="mailto:info@speakupAI.com">info@SpeakUpAI.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <small>&copy; 2026 SpeakUp AI. Barcha huquqlar himoyalangan.</small>
+          <div class="legal-links">
+            <a href="#">Maxfiylik siyosati</a>
+            <a href="#">Foydalanish shartlari</a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
