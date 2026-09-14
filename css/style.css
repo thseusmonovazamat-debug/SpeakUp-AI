@@ -147,6 +147,17 @@ section {
   outline-offset: 3px;
 }
 
+/* Mobile menu button */
+.menu-button {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /*Header*/
 
 .site-header {
@@ -174,12 +185,16 @@ section {
 }
 
 .navigation-list {
-  display: grid;
+  display: none;
   flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   width: 100%;
   order: 3;
+}
+
+.navigation-list.is-open {
+  display: grid;
 }
 
 .navigation-list a {
@@ -766,6 +781,10 @@ td {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .menu-button {
+    display: none;
   }
 }
 
